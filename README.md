@@ -30,17 +30,16 @@ rails db:migrate
 * gem 'devise'
 
 
-gem 'font-awesome-sass', '~> 5.13.0'
-gem 'image_processing', '~> 1.2'
+* gem 'font-awesome-sass', '~> 5.13.0'
+* gem 'image_processing', '~> 1.2'
 
-gem "mini_magick"
-gem 'figaro'
-gem 'fog-aws'
-gem 'carrierwave', '~> 2.0'
-gem 'rails_12factor', group: :production
-#gem 'pg', group: :production
+* gem "mini_magick"
+* gem 'figaro'
+* gem 'fog-aws'
+* gem 'carrierwave', '~> 2.0'
+* gem 'rails_12factor', group: :production
 
-gem 'jquery-rails', '~> 4.4
+* gem 'jquery-rails', '~> 4.4
 
 * Database creation
 
