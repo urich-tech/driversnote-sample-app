@@ -1,0 +1,71 @@
+<div id="aside" class="app-aside box-shadow-z3 modal fade lg nav-expand">
+    <div class="left navside white dk" layout="column">
+      <div class="navbar navbar-md no-radius box-shadow-z4">
+        <!-- brand -->
+        <a class="navbar-brand">
+        	 <img src="/assets/images/logo-green.svg">
+        	
+        </a>
+        <!-- / brand -->
+      </div>
+      <div flex="" class="hide-scroll">
+        <nav class="scroll">
+          <!-- <%=render 'shared/aside-top'%> -->
+          
+            <ul class="nav" ui-nav="">
+              <li class="nav-header hidden-folded">
+                <small class="text-muted">Main</small>
+              </li>
+              
+              <li>
+                <a href="dashboard.html">
+                  <span class="nav-icon">
+                    <i class="material-icons">
+                      <span ui-include="'../assets/images/i_0.svg'"></span>
+                    </i>
+                  </span>
+                  <span class="nav-text">Dashboard</span>
+                </a>
+              </li>
+          
+              <li>
+                <a>
+                  <span class="nav-caret">
+                    <i class="fa fa-caret-down"></i>
+                  </span>
+                  <span class="nav-label">
+                    <b class="label rounded label-sm primary">5</b>
+                  </span>
+                  <span class="nav-icon">
+                    <i class="material-icons">
+                      <span ui-include="'../assets/images/i_1.svg'"></span>
+                    </i>
+                  </span>
+                  <span class="nav-text">In-App Purchases</span>
+                </a>
+                <ul class="nav-sub">
+                  <li>
+                    <a href="/shops">
+                      <span class="nav-text">iBeacons</span>
+                    </a>
+                  </li>
+                  
+                </ul>
+              </li>
+
+         
+              <li class="nav-header hidden-folded">
+                <small class="text-muted">Help</small>
+              </li>
+              
+           
+          
+            </ul>
+        </nav>
+      </div>
+      <div flex-no-shrink="">
+
+        <%= render 'shared/aside_bottom'%>
+      </div>
+    </div>
+  </div>

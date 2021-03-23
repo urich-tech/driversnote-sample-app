@@ -1,0 +1,125 @@
+
+ <% if (current_user.subscription_seats == 0 ) || (current_user.subscription_seats == nil)%>
+
+ <div class="alert alert-danger" role="alert">Please kindly upgrade to a paid subscription. You dont have subscription seats. Go to user details</div>
+
+ <% end %>
+<!-- ############ PAGE START-->
+<div class="padding">
+  <div class="margin">
+    <h5 class="mb-0 _300">Hello there! <%= current_user.full_name.capitalize %></h5>
+    <small class="text-muted">To Driversnote. You can purchase all available subcriptions</small>
+  </div>
+  <div class="row">
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="box p-a">
+          <div class="pull-left m-r">
+            <span class="w-40 warn text-center rounded">
+              <i class="material-icons">shopping_basket</i>
+            </span>
+          </div>
+          <div class="clear">
+            <h4 class="m-0 text-md"><a href="">75 <span class="text-sm">Sales</span></a></h4>
+            <small class="text-muted">6 waiting payment.</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="box-color p-a primary">
+          <div class="pull-right m-l">
+            <span class="w-40 dker text-center rounded">
+              <i class="material-icons">local_shipping</i>
+            </span>
+          </div>
+          <div class="clear">
+            <h4 class="m-0 text-md"><a href="">40 <span class="text-sm">Routes</span></a></h4>
+            <small class="text-muted">38 Shipped.</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="box p-a">
+          <div class="pull-right m-l">
+            <span class="w-40 accent text-center rounded">
+              <i class="material-icons">people</i>
+            </span>
+          </div>
+          <div class="clear">
+            <h4 class="m-0 text-md"><a href="">6,000 <span class="text-sm">Members</span></a></h4>
+            <small class="text-muted">632 activities post.</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="box-color p-a accent">
+          <div class="pull-left m-r">
+            <span class="w-40 dker text-center rounded">
+              <i class="material-icons">comment</i>
+            </span>
+          </div>
+          <div class="clear">
+            <h4 class="m-0 text-md"><a href="">69 <span class="text-sm">Purchases</span></a></h4>
+            <small class="text-muted">5 approved.</small>
+          </div>
+        </div>
+      </div>
+  </div>
+ 
+
+  <div class="row">
+  
+    
+      <div class="col-md-6 col-xl-4">
+          <div class="box">
+            <div class="box-header">
+              <h3>Your Sales</h3>
+              <small>A general overview of your sales</small>
+            </div>
+            <div class="box-tool">
+            <ul class="nav">
+              <li class="nav-item inline">
+                <a class="nav-link">
+                  <i class="material-icons md-18"></i>
+                </a>
+              </li>
+              <li class="nav-item inline dropdown">
+                <a class="nav-link" data-toggle="dropdown">
+                  <i class="material-icons md-18"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-scale pull-right">
+                  <a class="dropdown-item" href="">This week</a>
+                  <a class="dropdown-item" href="">This month</a>
+                  <a class="dropdown-item" href="">This week</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item">Today</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+            <div class="box-body">
+              <div ui-jp="plot" ui-refresh="app.setting.color" ui-options="
+                [
+                  { data: [[1, 2], [2, 4], [3, 5], [4, 7], [5, 6], [6, 4], [7, 5], [8, 4]] },
+                  { data: [[1, 2], [2, 3], [3, 2], [4, 5], [5, 4], [6, 3], [7, 4], [8, 2]] }
+                ], 
+                {
+                  bars: { show: true, fill: true,  barWidth: 0.3, lineWidth: 2, order: 1, fillColor: { colors: [{ opacity: 0.2 }, { opacity: 0.2}] }, align: 'center'},
+                  colors: ['#0cc2aa','#fcc100'],
+                  series: { shadowSize: 3 },
+                  xaxis: { show: true, font: { color: '#ccc' }, position: 'bottom' },
+                  yaxis:{ show: true, font: { color: '#ccc' }},
+                  grid: { hoverable: true, clickable: true, borderWidth: 0, color: 'rgba(120,120,120,0.5)' },
+                  tooltip: true,
+                  tooltipOpts: { content: '%x.0 is %y.4',  defaultTheme: false, shifts: { x: 0, y: -40 } }
+                }
+              " style="height: 200px; padding: 0px; position: relative;">
+              <canvas class="flot-base" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 290px; height: 200px;" width="290" height="200"></canvas><div class="flot-text" style="position: absolute; inset: 0px; font-size: smaller; color: rgb(84, 84, 84);"><div class="flot-x-axis flot-x1-axis xAxis x1Axis" style="position: absolute; inset: 0px; display: block;"><div style="position: absolute; max-width: 29px; top: 187px; font: 400 11px / 13px &quot;Roboto&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; color: rgb(204, 204, 204); left: 14px; text-align: center;">1</div><div style="position: absolute; max-width: 29px; top: 187px; font: 400 11px / 13px &quot;Roboto&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; color: rgb(204, 204, 204); left: 51px; text-align: center;">2</div><div style="position: absolute; max-width: 29px; top: 187px; font: 400 11px / 13px &quot;Roboto&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; color: rgb(204, 204, 204); left: 88px; text-align: center;">3</div><div style="position: absolute; max-width: 29px; top: 187px; font: 400 11px / 13px &quot;Roboto&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; color: rgb(204, 204, 204); left: 125px; text-align: center;">4</div><div style="position: absolute; max-width: 29px; top: 187px; font: 400 11px / 13px &quot;Roboto&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; color: rgb(204, 204, 204); left: 162px; text-align: center;">5</div><div style="position: absolute; max-width: 29px; top: 187px; font: 400 11px / 13px &quot;Roboto&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; color: rgb(204, 204, 204); left: 199px; text-align: center;">6</div><div style="position: absolute; max-width: 29px; top: 187px; font: 400 11px / 13px &quot;Roboto&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; color: rgb(204, 204, 204); left: 236px; text-align: center;">7</div><div style="position: absolute; max-width: 29px; top: 187px; font: 400 11px / 13px &quot;Roboto&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; color: rgb(204, 204, 204); left: 273px; text-align: center;">8</div></div><div class="flot-y-axis flot-y1-axis yAxis y1Axis" style="position: absolute; inset: 0px; display: block;"><div style="position: absolute; top: 176px; font: 400 11px / 13px &quot;Roboto&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; color: rgb(204, 204, 204); left: 0px; text-align: right;">0</div><div style="position: absolute; top: 132px; font: 400 11px / 13px &quot;Roboto&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; color: rgb(204, 204, 204); left: 0px; text-align: right;">2</div><div style="position: absolute; top: 89px; font: 400 11px / 13px &quot;Roboto&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; color: rgb(204, 204, 204); left: 0px; text-align: right;">4</div><div style="position: absolute; top: 45px; font: 400 11px / 13px &quot;Roboto&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; color: rgb(204, 204, 204); left: 0px; text-align: right;">6</div><div style="position: absolute; top: 2px; font: 400 11px / 13px &quot;Roboto&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; color: rgb(204, 204, 204); left: 0px; text-align: right;">8</div></div></div><canvas class="flot-overlay" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 290px; height: 200px;" width="290" height="200"></canvas></div>
+            </div>
+          </div>
+      </div>
+  </div>
+
+
+</div>
+
+<!-- ############ PAGE END-->
