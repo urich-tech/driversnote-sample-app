@@ -29,13 +29,10 @@ rails db:migrate
 * Configuration
 * gem 'devise'
 
-# gem 'paperclip'
+
 gem 'font-awesome-sass', '~> 5.13.0'
 gem 'image_processing', '~> 1.2'
 
-#gem 'jquery-rails'
-##gem 'searchkick'
-#gem 'devise'
 gem "mini_magick"
 gem 'figaro'
 gem 'fog-aws'
